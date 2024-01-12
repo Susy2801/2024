@@ -1,0 +1,259 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  background-image: url(/img/bg_2.png);
+  background-size: cover;
+}
+
+.container {
+  width: 100vw;
+  height: 100vh;
+  position: relative;
+  overflow: hidden;
+}
+
+.dragon {
+  width: 700px;
+  position: absolute;
+  top: 300px;
+  top: 180%;
+  left: 48%;
+  transform: translate(-50%, -50%);
+  transition: 1s ease;
+}
+
+.cloud1 {
+  width: 300px;
+  position: absolute;
+  top: 70px;
+  left: -300px;
+  transition: 1.7s ease;
+}
+
+.cloud2 {
+  width: 250px;
+  position: absolute;
+  top: 150px;
+  right: -300px;
+  transition: 1.7s ease;
+}
+
+.fan {
+  width: 200px;
+  position: absolute;
+  top: 650px;
+  left: -300px;
+  transition: 2s ease;
+}
+
+.fan2 {
+  width: 200px;
+  position: absolute;
+  top: 650px;
+  transform: scaleX(-1);
+  right: -300px;
+  transition: 2s ease;
+}
+
+.flower {
+  width: 80px;
+  position: absolute;
+  left: -350px;
+  top: 400px;
+  transition: 3s ease;
+}
+
+.flower2 {
+  width: 120px;
+  position: absolute;
+  right: -350px;
+  top: 200px;
+  transition: 3.5s ease;
+}
+
+.latern {
+  width: 100px;
+  position: absolute;
+  top: -400px;
+  left: 80px;
+  transition: 1s ease;
+}
+
+.latern-2 {
+  width: 100px;
+  position: absolute;
+  top: -400px;
+  right: 80px;
+  transition: 1.5s ease;
+}
+
+.lartern2 {
+  width: 100px;
+  position: absolute;
+  top: -300px;
+  left: 0;
+  transition: 1s ease;
+}
+
+.lartern2-2 {
+  width: 100px;
+  position: absolute;
+  top: -300px;
+  right: 0;
+  transition: 1s ease;
+}
+
+.coin-container {
+  opacity: 0;
+  transition: 2.5s ease;
+}
+
+.coin {
+  width: 60px;
+  position: absolute;
+  left: 60px;
+  top: 600px;
+}
+
+.coin2 {
+  width: 40px;
+  position: absolute;
+  left: 200px;
+  top: 500px;
+}
+.coin2-2 {
+  width: 50px;
+  position: absolute;
+  left: 200px;
+  top: 300px;
+}
+
+.coin3 {
+  width: 60px;
+  position: absolute;
+  right: 60px;
+  top: 600px;
+}
+.coin4 {
+  width: 40px;
+  position: absolute;
+  right: 400px;
+  top: 500px;
+}
+
+.coin4-4 {
+  width: 50px;
+  position: absolute;
+  right: 150px;
+  top: 350px;
+}
+.cloud-red {
+  width: 500px;
+  height: auto;
+  position: absolute;
+  top: 500px;
+  left: -1000px;
+  transition: 1s ease;
+}
+
+.cloud-red-2 {
+  width: 500px;
+  height: auto;
+  position: absolute;
+  top: 500px;
+  transform: scaleX(-1);
+  right: -1000px;
+  transition: 1s ease;
+}
+
+.circle {
+  width: 1200px;
+  height: 1200px;
+  background-color: #fcd0ad;
+  clip-path: circle();
+  position: absolute;
+  top: 180%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  transition: 2s ease;
+}
+
+.text-container {
+  position: absolute;
+  top: 20%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  opacity: 0;
+  transition: 1s ease;
+}
+.text {
+  min-width: 664px;
+  font-family: "Lobster", sans-serif;
+  font-size: 100px;
+  color: rgb(179, 116, 34);
+}
+
+.number {
+  margin-top: 30px;
+  text-align: center;
+  font-family: "Mr Dafoe", cursive;
+  font-size: 80px;
+  color: rgb(179, 116, 34);
+}
+
+.firework-container {
+  opacity: 0;
+  transition: 1.6s ease;
+}
+
+.firework {
+  position: absolute;
+  width: 200px;
+  top: 0;
+  left: 300px;
+}
+
+.firework1 {
+  position: absolute;
+  width: 400px;
+  top: 0;
+  left: 0px;
+}
+
+.firework2 {
+  position: absolute;
+  width: 300px;
+  top: 0;
+  right: 300px;
+}
+
+.firework2-2 {
+  position: absolute;
+  width: 500px;
+  top: 50px;
+  right: 10px;
+}
+
+.btn {
+  position: absolute;
+  width: 200px;
+  height: 50px;
+  top: 50%;
+  left: 49.5%;
+  font-family: "Fredoka", sans-serif;
+  font-weight: 500;
+  color: #fcd0ad;
+  font-size: 25px;
+  border: outset 5px rgb(189, 130, 20);
+  background-color: red;
+  transform: translate(-50%, -50%);
+  cursor: pointer;
+  transition: 3s ease;
+}
+
+.btn:hover {
+  opacity: 80%;
+  color: #f3a76d;
+}

@@ -1,0 +1,39 @@
+function buttonClick() {
+  var fire = document.getElementById("firework");
+  var text = document.getElementById("text");
+  var dragon = document.getElementById("dragon");
+  var circle = document.getElementById("circle");
+  var laternLeft = document.getElementById("larten-l1");
+  var laternLeft2 = document.getElementById("larten-r1");
+  var larternRight = document.getElementById("larten-l2");
+  var larternRight2 = document.getElementById("larten-r2");
+  var cloud1 = document.getElementById("cloud1");
+  var cloud2 = document.getElementById("cloud2");
+  var clred = document.getElementById("cloud-red1");
+  var clred2 = document.getElementById("cloud-red2");
+  var fan = document.getElementById("fan");
+  var fan2 = document.getElementById("fan2");
+  var coin = document.getElementById("coin");
+  var flower1 = document.getElementById("flower1");
+  var flower2 = document.getElementById("flower2");
+  var btn = document.getElementById("btn");
+  //   Function
+  fire.style.opacity = "1";
+  text.style.opacity = "1";
+  dragon.style.top = "60%";
+  circle.style.top = "120%";
+  laternLeft.style.top = "0";
+  laternLeft2.style.top = "0";
+  larternRight.style.top = "0";
+  larternRight2.style.top = "-40px";
+  cloud1.style.left = "60px";
+  cloud2.style.right = "80px";
+  clred.style.left = "-70px";
+  clred2.style.right = "-70px";
+  fan.style.left = "230px";
+  fan2.style.right = "230px";
+  coin.style.opacity = "1";
+  flower1.style.left = "350px";
+  flower2.style.right = "350px";
+  btn.style.top = "200%";
+}
