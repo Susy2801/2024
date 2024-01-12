@@ -17,23 +17,53 @@ function buttonClick() {
   var flower1 = document.getElementById("flower1");
   var flower2 = document.getElementById("flower2");
   var btn = document.getElementById("btn");
+
   //   Function
-  fire.style.opacity = "1";
-  text.style.opacity = "1";
-  dragon.style.top = "60%";
-  circle.style.top = "120%";
-  laternLeft.style.top = "0";
-  laternLeft2.style.top = "0";
-  larternRight.style.top = "0";
-  larternRight2.style.top = "-40px";
   cloud1.style.left = "60px";
   cloud2.style.right = "80px";
   clred.style.left = "-70px";
   clred2.style.right = "-70px";
   fan.style.left = "230px";
   fan2.style.right = "230px";
-  coin.style.opacity = "1";
   flower1.style.left = "350px";
   flower2.style.right = "350px";
   btn.style.top = "200%";
+  setOpacity(1, fire, text, coin);
+  setTop(0, laternLeft, laternLeft2, larternRight);
+  setTop("-40px", larternRight2);
+  setTop("60%", dragon);
+  setTop("120%", circle);
+  setLeft();
+}
+
+function setOpacity(value, ...elements) {
+  elements.forEach(function (element) {
+    element.style.opacity = value;
+  });
+}
+
+function setTop(value, ...elements) {
+  elements.forEach(function (element) {
+    element.style.top = value;
+  });
+}
+
+function setLeft(value, ...elements) {
+  elements.forEach(function (element) {
+    element.style.left = value;
+  });
+}
+
+function setRight(value, ...elements) {
+  elements.forEach(function (element) {
+    element.style.right = value;
+  });
+}
+
+function startAnimation() {
+  var dragon = document.getElementById("dragon");
+  var circle = document.getElementById("circle");
+  if (dragon.style.width === "800px") {
+    circle.style.width = "1500px";
+  }
 }

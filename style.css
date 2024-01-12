@@ -24,6 +24,10 @@ body {
   transition: 1s ease;
 }
 
+.dragon:hover {
+  width: 800px;
+}
+
 .cloud1 {
   width: 300px;
   position: absolute;
@@ -48,6 +52,11 @@ body {
   transition: 2s ease;
 }
 
+.fan:hover {
+  transition: 0.4s;
+  top: 620px;
+}
+
 .fan2 {
   width: 200px;
   position: absolute;
@@ -55,6 +64,11 @@ body {
   transform: scaleX(-1);
   right: -300px;
   transition: 2s ease;
+}
+
+.fan2:hover {
+  transition: 0.4s;
+  top: 620px;
 }
 
 .flower {
@@ -65,12 +79,20 @@ body {
   transition: 3s ease;
 }
 
+.flower:hover {
+  transform: rotate(360deg);
+}
+
 .flower2 {
   width: 120px;
   position: absolute;
   right: -350px;
   top: 200px;
   transition: 3.5s ease;
+}
+
+.flower2:hover {
+  transform: rotate(360deg);
 }
 
 .latern {
