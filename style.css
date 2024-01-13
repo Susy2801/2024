@@ -207,7 +207,9 @@ body {
   top: 20%;
   left: 50%;
   transform: translate(-50%, -50%);
+  cursor: pointer;
   opacity: 0;
+  cursor: pointer;
   transition: 1s ease;
 }
 .text {
@@ -256,6 +258,21 @@ body {
   width: 500px;
   top: 50px;
   right: 10px;
+}
+
+.Nat {
+  width: 300px;
+  position: absolute;
+  top: 200%;
+  left: 49%;
+  transform: translate(-50%, -50%);
+  transition: 1s all ease;
+}
+
+.Nat:hover {
+  width: 350px;
+  filter: brightness(100px);
+  backdrop-filter: blur(50px);
 }
 
 .btn {

@@ -17,7 +17,7 @@ function buttonClick() {
   var flower1 = document.getElementById("flower1");
   var flower2 = document.getElementById("flower2");
   var btn = document.getElementById("btn");
-
+  var logo = document.getElementById("nat");
   //   Function
   cloud1.style.left = "60px";
   cloud2.style.right = "80px";
@@ -33,6 +33,7 @@ function buttonClick() {
   setTop("-40px", larternRight2);
   setTop("60%", dragon);
   setTop("120%", circle);
+  setTop("95%", logo);
   setLeft();
 }
 
@@ -58,12 +59,4 @@ function setRight(value, ...elements) {
   elements.forEach(function (element) {
     element.style.right = value;
   });
-}
-
-function startAnimation() {
-  var dragon = document.getElementById("dragon");
-  var circle = document.getElementById("circle");
-  if (dragon.style.width === "800px") {
-    circle.style.width = "1500px";
-  }
 }
